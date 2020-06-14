@@ -121,12 +121,14 @@ body {
   transition: 0.2s;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  opacity: 0;
 }
 
 .menu_active {
   z-index: 0;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -234,9 +236,10 @@ body {
   display: block;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .hero {
-    background-position: top left 30%;
+    background-size: 100%;
+    background-position: top left;
   }
 }
 /*# sourceMappingURL=style.css.map */
