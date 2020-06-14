@@ -7,7 +7,6 @@
     &-wrap
         display: flex
         align-items: center
-        min-height: 80px
         justify-content: space-between
     &__mobile, &__landline
         text-align: right
@@ -25,7 +24,7 @@
 .menu
     width: 100%
     position: fixed
-    z-index: -1
+    z-index: 0
     top: 80px
     left: 0
     padding: 16px 0
@@ -73,5 +72,17 @@
         font-size: 14px
         color: $text-color-light
         font-size: 14px
-
+@media (max-width: 576px)
+    .logo
+        display: none
+    .container
+        padding: 0 10px
+    .menu
+        top: 80px
+        height: 50%
+        &__nav
+            flex-direction: column 
+        &__link
+            margin-bottom: 20px    
+    
 
