@@ -1,0 +1,68 @@
+.offer
+    padding: 129px 0
+    &-block
+        background: #fff url('../img/form-bg.png') no-repeat center right
+        background-size: contain
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+        padding: 80px
+        margin-top: -230px
+    &__title
+        font-size: 25px
+        text-transform: uppercase
+        +bold
+        margin-bottom: 20px
+    &__subtitle
+        display: block
+        margin-bottom: 48px
+        font-size: 21px
+.form
+    &__row
+        display: flex
+        align-items: center
+        max-width: 900px
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+    &__label
+        font-size: 17px
+        display: block
+        margin-bottom: 15px
+    &__group
+        flex-basis: 33.33%
+    &__input
+        width: 100%
+        border-right-width: 0px
+        &-last
+            border-right-width: 1px
+    &__button
+        height: 80px
+        width: 100%       
+@media  ( max-width: 1199px )
+    .offer
+        &-block
+            background-position: center right -120px
+@media (max-width: 767px)
+    .offer
+        &-block
+            background-image: none
+            margin-top: -350px
+            padding: 20px
+        &__title
+            font-size: 20px
+        &__subtitle
+            font-size: 16px
+    .form
+        &__row
+            display: flex
+            flex-direction: column
+            &-checkbox
+                flex-direction: row
+        &__input
+            border-right-width: 1px 
+            margin-bottom: 20px           
+        &__group
+            flex-basis: 100%
+            flex-direction: column
+            width: 100%
+    
+            
