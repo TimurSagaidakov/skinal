@@ -16,6 +16,19 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('ProximaNova-Regular.eot');
+    src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('ProximaNova-Regular.woff') format('woff'),
+    url('ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin regular {
+    font-family: 'Proxima Nova Regular';
+}
 @mixin bold {
     font-family: 'Proxima Nova Semibold', sans-serif;
 }

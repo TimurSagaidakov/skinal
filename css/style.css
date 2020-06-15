@@ -46,9 +46,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("ProximaNova-Regular.eot");
+  src: url("ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("ProximaNova-Regular.woff") format("woff"), url("ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Proxima Nova Light', sans-serif;
+  font-family: 'Proxima Nova Regular';
   color: #262626;
+}
+
+img {
+  max-width: 100%;
 }
 
 .section {
@@ -83,6 +95,24 @@ body {
   background-color: #507fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  text-decoration: none;
+}
+
+.button-fitting {
+  color: #507fe1;
+  background-color: #fff;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  color: #ffffff;
+}
+
+.button-like {
+  background-color: #507fe1;
+  height: 30px;
+  border: none;
+  width: 30px;
 }
 
 .bg-secondary {
@@ -140,6 +170,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 999;
   width: 100%;
   background-color: #fff;
 }
@@ -454,6 +485,169 @@ body {
   }
   .feature-block__item {
     margin-bottom: 50px;
+  }
+}
+
+.catalog {
+  background-color: #f5f6f8;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-card__button {
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 11px;
+  height: 30px;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog__link-more {
+  display: block;
+  text-align: center;
+  max-width: 348px;
+  margin: auto;
+  padding: 29px;
+  font-size: 16px;
+}
+
+.catalog__description {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 24px;
+  font-size: 16px;
+  color: #000000;
+}
+
+@media (max-width: 1199px) {
+  .catalog-card {
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 999px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 500px;
+  }
+}
+
+.blog__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.blog__title {
+  font-size: 24px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.blog__link-more {
+  color: #507fe1;
+  font-size: 16px;
+}
+
+.blog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-list__image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.blog-list__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80px;
+}
+
+.blog-list__card {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+  .blog-list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .blog-list__card {
+    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
