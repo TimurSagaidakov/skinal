@@ -1,6 +1,15 @@
 body
     +light
     color: $text-color
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        +bold
+        text-align: center
+        text-transform: uppercase
+    &__title
+        margin-bottom: 100px
 .button-o
     text-transform: uppercase
     border: 2px solid $primary
@@ -40,6 +49,10 @@ body
             height: 30px
             border: 1px solid #dddddd
             margin-right: 20px
-
+@media (max-width:  576px)
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px
     
 
