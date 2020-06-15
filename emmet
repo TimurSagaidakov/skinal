@@ -1,0 +1,1 @@
+.price-block>.price-card*8>(.price-card__image>img[src="img/price-$.png"])+.price-card__text>.price-card__pricetag+.price-card__button>button.button{Оставить заявку}  
