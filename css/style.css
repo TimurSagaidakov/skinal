@@ -876,6 +876,18 @@ img {
   border-top: 15px solid #fff;
 }
 
+@media (max-width: 500px) {
+  .reviews-slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews-slider__item {
+    margin-bottom: 20px;
+  }
+}
+
 .factory-block {
   display: -webkit-box;
   display: -ms-flexbox;
