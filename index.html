@@ -10,23 +10,23 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header"  id="header">
         <div class="menu ">
             <div class="container">
                 <nav class="menu__nav">
-                    <a href="#" class="menu__link">Главная</a>
+                    <a href="#header" class="menu__link">Главная</a>
                     <!-- /.menu__link -->
-                    <a href="#" class="menu__link">ПРОДУКЦИЯ</a>
+                    <a href="#features" class="menu__link">Преимущества</a>
                     <!-- /.menu__link -->
-                    <a href="#" class="menu__link">КАТАЛОГ</a>
+                    <a href="#catalog" class="menu__link">КАТАЛОГ</a>
                     <!-- /.menu__link -->
-                    <a href="#" class="menu__link">ПРИМЕРЫ РАБОТ</a>
+                    <a href="#price" class="menu__link">Цены и виды скинали</a>
                     <!-- /.menu__link -->
-                    <a href="#" class="menu__link">ПРИМЕРКА ИЗОБРАЖЕНИЙ </a>
+                    <a href="#before" class="menu__link">ПРИМЕРКА ИЗОБРАЖЕНИЙ </a>
                     <!-- /.menu__link -->
-                    <a href="#" class="menu__link">СТОИМОСТЬ ДИЛЕРАМ</a>
+                    <a href="#factory" class="menu__link">О производстве</a>
                     <!-- /.menu__link -->
-                    <a href="#" class="menu__link">О СКИНАЛИ</a>
+                    <a href="#contacts" class="menu__link">Контакты</a>
                     <!-- /.menu__link -->
                 </nav>
                 <!-- /.menu__nav -->
@@ -58,7 +58,7 @@
                         <a class =" navbar__phone"href="tel:+79999999999">+7 999 999 99 99</a>
                         <a class="navbar__email navbar__small-text" href="mailto:info@mail.cu"> info@mail.cu</a>
                     </div>
-                    <button class="button-o navbar__button">Получить консультацию</button>
+                    <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
                 </div>
             </div>
             <!-- /.container -->
@@ -70,7 +70,7 @@
                     Гарантия <br> минимальной цены<br> на скинали
                 </h1>
                 <span class="hero__subtitle">от 3 000 р/м2</span>
-                <button class="button hero__button">Заказать скинали</button>
+                <a href="#offer" class="button hero__button">Заказать скинали</a>
             </div>
             <!-- /.container -->
         </div>
@@ -79,7 +79,7 @@
     <!-- /.header -->
 
     <main>
-        <section class="offer bg-secondary">
+        <section class="offer bg-secondary" id="offer">
             <div class="container">
                 <div class="offer__block offer-block offer-block_calc-bg">
                     <h2 class="offer__title">ОСТАВЬТЕ ЗАЯВКУ НА РАСЧЕТ</h2>
@@ -88,7 +88,14 @@
                         <div class="form__row">
                             <div class="form__group">
                                 <label for="" class="form__label">Вид стекла</label>
-                                <input type="text" class="input form__input">
+                                <input type="hidden" value="С печатью" id="select-type" name='type'>
+                                <div class="select form__select">
+                                    <div class="select__checked">С печатью</div>
+                                    <ul class="select__dropdown">
+                                        <li class="select__option" data-value="С печатью"> С печатью</li>
+                                        <li class="select__option" data-value="Без печати">Без печати</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form__group">
                                 <label for="" class="form__label">Ширина, см</label>
@@ -130,7 +137,7 @@
             <!-- /.container -->
         </section>
         <!-- /.offer -->
-        <section class="feature section">
+        <section class="feature section" id="features">
             <div class="container">
                 <h2 class="section-title section__title">
                     НАШИ ПРЕИМУЩЕСТВА
@@ -190,7 +197,7 @@
             <!-- /.container -->
         </section>
         <!-- /.feutures section -->
-        <section class="section catalog">
+        <section class="section catalog" id="catalog">
             <div class="container">
                 <h2 class="section-title section__title">КАТАЛОГ СКИНАЛИ</h2>
                 <div class="catalog-block">
@@ -354,7 +361,7 @@
             </div>
         </section>
         <!-- /.section blog-list -->
-        <section class="section price">
+        <section class="section price" id="price">
             <div class="container">
                 <h2 class="section-title section__title">Цены и виды скинали</h2>
                 <div class="price-block">
@@ -562,7 +569,7 @@
                 <!-- /.steps-block -->
             </div>
         </section>
-        <section class="section before">
+        <section class="section before" id="before">
             <div class="container">
                 <h2 class="section-title section__title">До и после</h2>
                 <div class="before-slider-wrap">
@@ -641,7 +648,7 @@
                                 <input type="text" class="input form__input" placeholder="Ваше имя">
                             </div>
                             <div class="form__group">                                
-                                <input type="text" class="input form__input" placeholder="Ваш телефон">
+                                <input type="tel" class="input form__input" placeholder="Ваш телефон">
                             </div>
                             <div class="form__group">
                                 <input type="text" class="input form__input form__input-last" placeholder="Ваша цена">
@@ -662,7 +669,7 @@
             </div>
             <!-- /.container -->
         </section>
-        <section class="section factory">
+        <section class="section factory" id="factory">
             <div class="container">
                 <h2 class="section-title section__title">О производстве</h2>
                 <!-- /.section-title section__title -->
@@ -684,7 +691,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section factory -->
-        <section class="section contacts">
+        <section class="section contacts" id="contacts">
             <div class="container">
                 <h2 class="section-title section__title">Контакты</h2>
                 <div class="contacts-block">
@@ -766,21 +773,7 @@
 <script type="text/javascript" src="https://spikmi.com/Widget?Id=3667"></script>
 <script src="js/jquery.event.move.js"></script>
 <script src="js/slick.min.js"></script>
-
-<script>
-    $(window).load(function() {
-        $(".before-after").twentytwenty({
-            before_label: 'Без скинали',
-            after_label: 'С установленным скинали'
-        });
-        $('.before-slider').slick({
-            draggable: false,
-            dots: true,
-            dotsClass: 'before-slider__dots',
-            prevArrow: $('.arrow-left'),
-            nextArrow: $('.arrow-right')
-        })
-    });
-</script>
+<script src="js/main.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 </body>
 </html>
