@@ -270,8 +270,8 @@ img {
   left: 0;
   padding: 16px 0;
   background-color: #507fe1;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   opacity: 0;
@@ -279,8 +279,8 @@ img {
 
 .menu_active {
   z-index: 99999;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
   opacity: 1;
 }
 
@@ -1228,6 +1228,12 @@ img {
 .arrow-right {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
+}
+
+@media (max-width: 800px) {
+  .before-slider-arrows {
+    display: none;
+  }
 }
 
 /* Slider */
